@@ -1,5 +1,5 @@
 import React from "react";
-import { BrownserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,8 +11,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
+      <Routes>
       <Navbar/>
-      <Switch>
         <Route exact path="/">
           <Home/>
         </Route>
@@ -25,7 +25,7 @@ function App() {
         <Route exact path="*">
           <Error/>
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
