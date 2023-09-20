@@ -1,5 +1,5 @@
 import React from "react";
-import { Brownser as Router, Route, Switch } from "react-router-dom";
+import { BrownserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,7 +10,23 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div></div>
+    <Router>
+      <Navbar/>
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+        <Route exact path="/about">
+          <About/>
+        </Route>
+        <Route exact path="/cocktail/:id">
+          <SingleCocktail/>
+        </Route>
+        <Route exact path="*">
+          <Error/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
