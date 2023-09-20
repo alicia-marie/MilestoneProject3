@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const SingleCocktail = () => {
     return (
@@ -8,4 +8,4 @@ const SingleCocktail = () => {
     )
 }
 
-export default SingleCocktail 
+export default SingleCocktail;

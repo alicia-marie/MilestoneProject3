@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Error = () => {
+const Navbar = () => {
     return (
         <div>
-            <h2>Error Page</h2>
+            <h2>Navbar</h2>
         </div>
     )
 }
 
-export default Error;
+export default Navbar
